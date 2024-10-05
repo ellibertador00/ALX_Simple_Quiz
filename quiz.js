@@ -1,0 +1,17 @@
+
+function checkAnswer() {
+  var correctAnswer = "4";
+}
+//document.getElementById("submit-answer").addEventListener("click", checkAnswer);
+var userAnswer = document.querySelector('input[name="quiz"]:checked').value;
+
+
+
+if (userAnswer == checkAnswer) {
+  document.getElementById("feedback").textContent = "Correct! Well done.";
+}
+else {
+  document.getElementById("feedback").textContent = "That's incorrect. Try again!";
+}
+
+document.getElementById("submit-answer").addEventListener("click", checkAnswer);
